@@ -1,20 +1,299 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Portfolio of Ariadna Uxue Palomino Ylla, a Physics PhD candidate building computational tools for black hole dynamics, scientific modeling, machine learning, and local-first AI."
+    >
+    <title>Ariadna Uxue Palomino Ylla | Scientific Builder Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
 
-text-align: center
-</style>
-</head>
-<body>
+  <body>
+    <main id="top">
+      <section class="grid-hero" id="grid" aria-labelledby="hero-title">
+        <img class="cloud-accent cloud-accent--hero" src="assets/cloud-accent-hero.png" alt="" aria-hidden="true">
 
-<video autoplay loop muted poster="background.jpg" id="background" width=100%>
-   <source src="video.mp4" type="video/mp4">
+        <div class="grid-intro">
+          <p class="eyebrow">Physics PhD Candidate | Machine Learning | Scientific AI</p>
+          <h1 id="hero-title">Ariadna Uxue Palomino Ylla</h1>
+          <p class="intro-line">
+            I develop machine-learning and scientific-computing workflows that turn complex scientific problems into practical tools, from black-hole modelling to biomedical data and local-first AI systems.
+          </p>
+        </div>
 
-</video>
+        <section class="portfolio-cuadricule" aria-label="Interactive portfolio grid" data-category-grid>
+          <button class="grid-trigger trigger-working" type="button" data-filter="working" aria-pressed="false">Working on</button>
+          <button class="grid-trigger trigger-projects" type="button" data-filter="projects" aria-pressed="false">Projects</button>
+          <button class="grid-trigger trigger-publications" type="button" data-filter="publications" aria-pressed="false">Publications</button>
+          <button class="grid-trigger trigger-skills" type="button" data-filter="skills" aria-pressed="false">Skills</button>
+          <button class="grid-trigger trigger-experience" type="button" data-filter="experience" aria-pressed="false">Work experience</button>
+          <button class="grid-trigger trigger-education" type="button" data-filter="education" aria-pressed="false">Education</button>
 
+          <span class="orbit-mark orbit-mark-one" aria-hidden="true"></span>
+          <span class="orbit-mark orbit-mark-two" aria-hidden="true"></span>
+          <div class="project-github-note" aria-hidden="true">
+            <span>More projects here</span>
+          </div>
+          <svg class="project-github-line" aria-hidden="true" focusable="false">
+            <line x1="0" y1="0" x2="0" y2="0"></line>
+          </svg>
 
+          <article class="grid-tile tile-lg" data-category="working" data-min-w="7" data-min-h="5" style="--col: 4; --row: 6; --w: 7; --h: 5;">
+            <div class="tile-card"><div class="tile-face tile-face-front"></div><div class="tile-face tile-face-back">
+              <p class="tile-kicker">In development</p><h2>QNM Modeling Project</h2><p>Defining a new project around quasinormal modes, compact-object perturbations, and possible observable signatures in gravitational-wave ringdown.</p>
+            </div></div>
+          </article>
+          <article class="grid-tile tile-lg" data-category="working" data-min-w="7" data-min-h="5" style="--col: 11; --row: 7; --w: 7; --h: 5;">
+            <div class="tile-card"><div class="tile-face tile-face-front"></div><div class="tile-face tile-face-back">
+              <p class="tile-kicker">Realistic BH ray tracing</p><h2>Photon Shooting &amp; Redshift Signals</h2><p>Building a realistic black-hole model that shoots photons from an emitting source to a distant observer, to study redshift signals and observable geodesic effects.</p>
+            </div></div>
+          </article>
+          <article class="grid-tile tile-lg" data-category="working" data-min-w="7" data-min-h="5" style="--col: 16; --row: 10; --w: 7; --h: 5;">
+            <div class="tile-card"><div class="tile-face tile-face-front"></div><div class="tile-face tile-face-back">
+              <p class="tile-kicker">Biomedical ML</p><h2>Depression Gene Expression</h2><p>Analyzing depression-related transcriptomic data with preprocessing, normalization checks, sample/region handling, statistical modeling, and interpretable visualization.</p>
+            </div></div>
+          </article>
 
+          <article class="grid-tile tile-lg" data-category="projects" data-min-w="6" data-min-h="5" style="--col: 4; --row: 6; --w: 6; --h: 5;">
+            <div class="tile-card"><div class="tile-face tile-face-front"></div><div class="tile-face tile-face-back">
+              <p class="tile-kicker">Local-first AI tool</p><h2>Persona</h2><p>Personal writing assistant for structured knowledge, drafting, and privacy-aware research workflows.</p><a class="tile-link" href="https://github.com/Uxuee/Persona" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div></div>
+          </article>
+          <article class="grid-tile tile-lg" data-category="projects" data-min-w="7" data-min-h="5" style="--col: 11; --row: 7; --w: 7; --h: 5;">
+            <div class="tile-card"><div class="tile-face tile-face-front"></div><div class="tile-face tile-face-back">
+              <p class="tile-kicker">Biomedical ML / gene expression</p><h2>DGEAnalysis</h2><p>Reproducible pipeline for differential gene-expression analysis with preprocessing, covariate handling, Linear Mixed Models, FDR correction, and visualization.</p><a class="tile-link" href="https://github.com/Uxuee/DGEAnalysis" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div></div>
+          </article>
+          <article class="grid-tile tile-lg" data-category="projects" data-min-w="7" data-min-h="5" style="--col: 7; --row: 10; --w: 7; --h: 5;">
+            <div class="tile-card"><div class="tile-face tile-face-front"></div><div class="tile-face tile-face-back">
+              <p class="tile-kicker">Numerical GR tool</p><h2>Photon Shooting &amp; Redshift Signals</h2><p>Numerical workflow for tracing photon paths to a distant observer and extracting redshift-related observables in realistic black-hole scenarios.</p>
+            </div></div>
+          </article>
+          <article class="grid-tile tile-md" data-category="projects" data-min-w="6" data-min-h="4" style="--col: 15; --row: 11; --w: 6; --h: 4;">
+            <div class="tile-card"><div class="tile-face tile-face-front"></div><div class="tile-face tile-face-back">
+              <p class="tile-kicker">Creative front-end / research interface</p><h2>Portfolio Grid</h2><p>Interactive graph-paper portfolio interface built with vanilla HTML, CSS, and JavaScript.</p><!-- Add portfolio GitHub URL here when repository exists. -->
+            </div></div>
+          </article>
 
-</body>
+          <article class="grid-tile tile-lg" data-category="publications" data-min-w="7" data-min-h="5" style="--col: 4; --row: 6; --w: 7; --h: 5;">
+            <div class="tile-card"><div class="tile-face tile-face-front"></div><div class="tile-face tile-face-back">
+              <p class="tile-kicker">arXiv preprint</p><h2>Ringdown Waves from Hairy Black Holes</h2><p>QNM-geodesic correspondence for hairy black holes modeled through anisotropic-fluid perturbations.</p><a class="tile-link" href="https://arxiv.org/abs/2603.15979" target="_blank" rel="noopener noreferrer">arXiv</a>
+            </div></div>
+          </article>
+          <article class="grid-tile tile-xl" data-category="publications" data-min-w="8" data-min-h="5" style="--col: 12; --row: 6; --w: 8; --h: 5;">
+            <div class="tile-card"><div class="tile-face tile-face-front"></div><div class="tile-face tile-face-back">
+              <p class="tile-kicker">Physical Review D</p><h2>Test Particle Motion Around a Dressed Black Hole</h2><p>Geodesic motion, apsis shift, osculating orbital elements, and redshift observables in a perturbed black-hole spacetime.</p><div class="tile-links"><a class="tile-link" href="https://link.aps.org/doi/10.1103/681r-bw7q" target="_blank" rel="noopener noreferrer">DOI</a><a class="tile-link" href="https://arxiv.org/abs/2504.21755" target="_blank" rel="noopener noreferrer">arXiv</a></div>
+            </div></div>
+          </article>
+          <article class="grid-tile tile-talks" data-category="talks" style="--col: 7; --row: 9; --w: 8; --h: 6;">
+            <div class="tile-card"><div class="tile-face tile-face-front"></div><div class="tile-face tile-face-back">
+              <p class="tile-kicker">Talks and presentations</p>
+              <h2>Talks and presentations</h2>
+              <ol class="talk-list">
+                <li>
+                  <span class="talk-type">Workshop presentation</span>
+                  <strong>Nagoya Workshop on General Relativity</strong>
+                  <span>Nagoya University · Jan 2026</span>
+                  <em>Ringdown Waves from Hairy Black Holes</em>
+                </li>
+                <li>
+                  <span class="talk-type">Invited talk</span>
+                  <strong>Geodesics: Orbits and Rays 2025</strong>
+                  <span>Rikkyo University, Tokyo · Dec 2025</span>
+                  <em>Perturbed Geodesic Motion Around Black Holes with Accreting Matter: A First-Order Relativistic Treatment</em>
+                </li>
+                <li>
+                  <span class="talk-type">Seminar</span>
+                  <strong>Osaka Metropolitan University · 2024</strong>
+                  <em>Test particle motion around a black hole dressed with stationary and spherically symmetric fluid distribution</em>
+                </li>
+                <li>
+                  <span class="talk-type">Oral presentation</span>
+                  <strong>BH Magnetosphere Workshop 2024</strong>
+                  <span>Tomakomai, Japan · Mar 2024</span>
+                  <em>Particle motion in a non-vacuum solution: accreting matter onto a spherically symmetric black hole</em>
+                </li>
+                <li>
+                  <span class="talk-type">Poster</span>
+                  <strong>53rd Summer School on Astronomy and Astrophysics</strong>
+                  <span>University of Tokyo · 2023</span>
+                  <em>Particle motion in a non-vacuum solution: accreting matter onto a spherically symmetric black hole</em>
+                </li>
+              </ol>
+            </div></div>
+          </article>
+
+          <article class="grid-tile tile-md skill-group-tile" data-category="skills" data-min-w="7" data-min-h="4" style="--col: 4; --row: 5; --w: 7; --h: 4;">
+            <div class="tile-card"><div class="tile-face tile-face-front"></div><div class="tile-face tile-face-back">
+              <p class="tile-kicker">Languages</p>
+              <h2>Languages</h2>
+              <div class="skill-chip-list">
+                <img class="shield-badge" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&amp;logo=python&amp;logoColor=white" alt="Python badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&amp;logo=r&amp;logoColor=white" alt="R badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&amp;logo=c&amp;logoColor=black" alt="C badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/Wolfram%20Language-DD1100?style=for-the-badge&amp;logo=wolfram&amp;logoColor=white" alt="Wolfram Language badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/Mathematica-DD1100?style=for-the-badge&amp;logo=wolfram&amp;logoColor=white" alt="Mathematica badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&amp;logo=postgresql&amp;logoColor=white" alt="SQL badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/SPARQL-0C479D?style=for-the-badge" alt="SPARQL badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&amp;logo=javascript&amp;logoColor=black" alt="JavaScript badge" loading="lazy">
+              </div>
+            </div></div>
+          </article>
+          <article class="grid-tile tile-md skill-group-tile" data-category="skills" data-min-w="9" data-min-h="5" style="--col: 12; --row: 5; --w: 9; --h: 5;">
+            <div class="tile-card"><div class="tile-face tile-face-front"></div><div class="tile-face tile-face-back">
+              <p class="tile-kicker">Machine learning</p>
+              <h2>Machine Learning &amp; Data Science Stack</h2>
+              <div class="skill-chip-list">
+                <img class="shield-badge" src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&amp;logo=pytorch&amp;logoColor=white" alt="PyTorch badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/TensorFlow%20%2F%20Keras-FF6F00?style=for-the-badge&amp;logo=tensorflow&amp;logoColor=white" alt="TensorFlow and Keras badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&amp;logo=scikitlearn&amp;logoColor=white" alt="scikit-learn badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/YOLO%20%2F%20Ultralytics-111F68?style=for-the-badge" alt="YOLO and Ultralytics badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/ResNet50-4B8BBE?style=for-the-badge" alt="ResNet50 badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/CNNs-6A5ACD?style=for-the-badge" alt="CNNs badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&amp;logo=pandas&amp;logoColor=white" alt="pandas badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&amp;logo=numpy&amp;logoColor=white" alt="NumPy badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&amp;logo=scipy&amp;logoColor=white" alt="SciPy badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/statsmodels-333333?style=for-the-badge" alt="statsmodels badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge" alt="Matplotlib badge" loading="lazy">
+              </div>
+            </div></div>
+          </article>
+          <article class="grid-tile tile-md skill-group-tile" data-category="skills" data-min-w="9" data-min-h="5" style="--col: 4; --row: 10; --w: 9; --h: 5;">
+            <div class="tile-card"><div class="tile-face tile-face-front"></div><div class="tile-face tile-face-back">
+              <p class="tile-kicker">Methods</p>
+              <h2>Methods &amp; Technical Skills</h2>
+              <div class="skill-chip-list">
+                <img class="shield-badge" src="https://img.shields.io/badge/Statistical%20Modeling-145D63?style=for-the-badge" alt="Statistical Modeling badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/Linear%20Mixed%20Models-145D63?style=for-the-badge" alt="Linear Mixed Models badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/FDR%20Correction-145D63?style=for-the-badge" alt="FDR Correction badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/Model%20Evaluation-145D63?style=for-the-badge" alt="Model Evaluation badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/Data%20Pipelines-145D63?style=for-the-badge" alt="Data Pipelines badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/Regex-145D63?style=for-the-badge" alt="Regex badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/Scientific%20Computing-145D63?style=for-the-badge" alt="Scientific Computing badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/Differential%20Equations-145D63?style=for-the-badge" alt="Differential Equations badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/Numerical%20Simulation-145D63?style=for-the-badge" alt="Numerical Simulation badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/Perturbation%20Methods-145D63?style=for-the-badge" alt="Perturbation Methods badge" loading="lazy">
+              </div>
+            </div></div>
+          </article>
+          <article class="grid-tile tile-md skill-group-tile" data-category="skills" data-min-w="7" data-min-h="4" style="--col: 13; --row: 10; --w: 7; --h: 4;">
+            <div class="tile-card"><div class="tile-face tile-face-front"></div><div class="tile-face tile-face-back">
+              <p class="tile-kicker">Tools</p>
+              <h2>Tools &amp; Workflow</h2>
+              <div class="skill-chip-list">
+                <img class="shield-badge" src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&amp;logo=git&amp;logoColor=white" alt="Git badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&amp;logo=linux&amp;logoColor=black" alt="Linux badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&amp;logo=visualstudiocode&amp;logoColor=white" alt="VS Code badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&amp;logo=latex&amp;logoColor=white" alt="LaTeX badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&amp;logo=jupyter&amp;logoColor=white" alt="Jupyter badge" loading="lazy">
+              </div>
+            </div></div>
+          </article>
+          <article class="grid-tile tile-md skill-group-tile" data-category="skills" data-min-w="7" data-min-h="4" style="--col: 21; --row: 10; --w: 7; --h: 4;">
+            <div class="tile-card"><div class="tile-face tile-face-front"></div><div class="tile-face tile-face-back">
+              <p class="tile-kicker">Web and AI</p>
+              <h2>Web &amp; AI Workflow Tools</h2>
+              <div class="skill-chip-list">
+                <img class="shield-badge" src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&amp;logo=html5&amp;logoColor=white" alt="HTML badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&amp;logo=css&amp;logoColor=white" alt="CSS badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&amp;logo=javascript&amp;logoColor=black" alt="JavaScript badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/AI%20Agents-111111?style=for-the-badge" alt="AI Agents badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/LLM%20Workflows-6B46C1?style=for-the-badge" alt="LLM Workflows badge" loading="lazy">
+                <img class="shield-badge" src="https://img.shields.io/badge/SPARQL-0C479D?style=for-the-badge" alt="SPARQL badge" loading="lazy">
+              </div>
+            </div></div>
+          </article>
+          <article class="grid-tile tile-md skill-group-tile language-group-tile" data-category="skills" data-min-w="6" data-min-h="4" style="--col: 21; --row: 5; --w: 6; --h: 4;">
+            <div class="tile-card"><div class="tile-face tile-face-front"></div><div class="tile-face tile-face-back">
+              <p class="tile-kicker">Spoken languages</p>
+              <h2>Languages</h2>
+              <div class="skill-chip-list">
+                <span class="language-badge">Spanish — native</span>
+                <span class="language-badge">English — fluent</span>
+                <span class="language-badge">Japanese — elementary</span>
+                <span class="language-badge">Italian — conversational</span>
+                <span class="language-badge">French — basic</span>
+              </div>
+            </div></div>
+          </article>
+
+          <article class="grid-tile tile-lg" data-category="experience" data-min-w="7" data-min-h="5" style="--col: 3; --row: 6; --w: 7; --h: 5;"><div class="tile-card"><div class="tile-face tile-face-front"></div><div class="tile-face tile-face-back"><p class="tile-kicker">Gene expression / depression project</p><h2>Biomedical ML Research Internship</h2><p>Developing analysis workflows for depression-related transcriptomic data, including preprocessing, normalization checks, sample/region handling, and interpretable statistical modeling.</p></div></div></article>
+          <article class="grid-tile tile-lg" data-category="experience" data-min-w="6" data-min-h="4" style="--col: 10; --row: 8; --w: 6; --h: 4;"><div class="tile-card"><div class="tile-face tile-face-front"></div><div class="tile-face tile-face-back"><p class="tile-kicker">2022-present</p><h2>Research Programmer - Wolfram</h2><p>Data curation, symbolic computation, regex/SPARQL workflows, visualization, and research-oriented software support.</p></div></div></article>
+          <article class="grid-tile tile-lg" data-category="experience" data-min-w="7" data-min-h="5" style="--col: 16; --row: 10; --w: 7; --h: 5;"><div class="tile-card"><div class="tile-face tile-face-front"></div><div class="tile-face tile-face-back"><p class="tile-kicker">C programming / scientific problem solving</p><h2>Teaching / Programming Support</h2><p>Teaching assistance for programming and physics-related courses, helping students use C, algorithmic thinking, debugging, and structured problem solving.</p></div></div></article>
+
+          <article class="grid-tile tile-lg" data-category="education" data-min-w="6" data-min-h="4" style="--col: 3; --row: 5; --w: 6; --h: 4;"><div class="tile-card"><div class="tile-face tile-face-front"></div><div class="tile-face tile-face-back"><p class="tile-kicker">Current</p><h2>PhD in Physics</h2><p>Nagoya University. Black-hole dynamics, gravitational-wave modeling, and numerical methods.</p></div></div></article>
+          <article class="grid-tile tile-lg" data-category="education" data-min-w="6" data-min-h="4" style="--col: 9; --row: 8; --w: 6; --h: 4;"><div class="tile-card"><div class="tile-face tile-face-front"></div><div class="tile-face tile-face-back"><p class="tile-kicker">Graduate study</p><h2>Master's in Physics</h2><p>Nagoya University. General relativity, compact objects, and computational physics.</p></div></div></article>
+          <article class="grid-tile tile-xl" data-category="education" data-min-w="8" data-min-h="4" style="--col: 15; --row: 10; --w: 8; --h: 4;"><div class="tile-card"><div class="tile-face tile-face-front"></div><div class="tile-face tile-face-back"><p class="tile-kicker">Undergraduate study</p><h2>Bachelor's in Science with mention in Physics</h2><p>Pontificia Universidad Catolica del Peru. Physics foundation, mathematical methods, and scientific programming.</p></div></div></article>
+        </section>
+
+        <div class="grid-actions" aria-label="Primary contact actions">
+          <a class="button button-primary" href="mailto:ariadnauxue@gmail.com">Send me a message</a>
+          <a class="button button-secondary" href="https://github.com/Uxuee" target="_blank" rel="noopener noreferrer" data-github-action>GitHub</a>
+          <a class="button button-secondary" href="assets/ariadna-palomino-cv.pdf" download>Download CV</a>
+        </div>
+      </section>
+
+      <section class="support-section research-summary" id="research" aria-labelledby="research-title">
+        <div class="research-summary__headline">
+          <p class="eyebrow">Research summary</p>
+          <h2 id="research-title">A physicist building machine-learning tools for scientific research.</h2>
+        </div>
+        <div class="research-summary__body">
+          <p>
+            I am a physics PhD student developing machine-learning and scientific-computing tools for data-driven research. My work bridges numerical modeling, computer vision, biomedical data analysis, and AI-assisted research workflows, with a focus on turning complex scientific problems into practical computational pipelines.
+          </p>
+        </div>
+        <img class="research-portrait" src="assets/ariadna-portrait-cutout-compact.png" alt="Portrait of Ariadna Uxue Palomino Ylla">
+      </section>
+
+      <section class="support-section support-section-publications" id="open-to" aria-labelledby="open-to-title">
+        <img class="cloud-accent cloud-accent-contact" src="assets/cloud-accent-contact.png" alt="" aria-hidden="true">
+        <div>
+          <p class="eyebrow">Open to</p>
+          <h2 id="open-to-title">Opportunities and collaborations</h2>
+        </div>
+        <div class="publication-list">
+          <article>
+            <p class="tile-kicker">Scientific AI / ML research</p>
+            <h3>Research internships</h3>
+            <p>Open to internships where I can combine machine learning, scientific computing, and physics-based modeling to build useful research tools.</p>
+          </article>
+          <article>
+            <p class="tile-kicker">Data + modeling</p>
+            <h3>Applied ML / Data Science</h3>
+            <p>Interested in roles involving preprocessing, statistical modeling, model evaluation, interpretable analysis, and reproducible workflows for complex datasets.</p>
+          </article>
+          <article>
+            <p class="tile-kicker">Research tools</p>
+            <h3>Scientific software</h3>
+            <p>I enjoy turning mathematical models, simulations, and analysis pipelines into practical, documented, and reusable scientific software.</p>
+          </article>
+          <article>
+            <p class="tile-kicker">Physics + biomedical data</p>
+            <h3>AI for science</h3>
+            <p>Especially interested in projects connecting physics, biomedical data, local-first AI tools, agentic workflows, and computational discovery.</p>
+          </article>
+          <article>
+            <p class="tile-kicker">Where I can contribute</p>
+            <h3>Best fit</h3>
+            <p>Teams working on scientific ML, computational biology, AI agents for research, physics-informed modeling, or data-driven scientific discovery.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Ariadna Uxue Palomino Ylla.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
